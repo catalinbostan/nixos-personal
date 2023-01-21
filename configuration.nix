@@ -41,6 +41,7 @@
      htop
      screen
      zerotierone
+     git
    ];
 
   # Enable/Config OpenSSH
