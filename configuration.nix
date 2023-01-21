@@ -25,10 +25,11 @@
   users.users.cata = {
      isNormalUser = true;
      extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
-  #   packages = with pkgs; [
+     packages = with pkgs; [
   #     firefox
   #     thunderbird
-  #   ];
+     git
+     ];
    };
   users.extraUsers.root.openssh.authorizedKeys.keys = [ "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDdYRretGQ50JGrg38/1a49M6z83rQ26kI249NIc/vmGx+WsleTuc1uEfdg4k3He15T+ZhDcUsyJdHa8IFDPZallG/s+zmI7AaPlr8E+RzFItysL7Q3sYIM4gE4bX2ZG+VBK0Kje34ocehnqesuolxStKT1yxT5NWvW/bSSJaAtLbBzWkyzsFb8Xq24y3FCNH276pczTEgUGKL3+dmJaXEunwP8iYGVRcXPtgetxwkekf5eiUWOKHFg6HXVQc4SuAR1ETnXhp4BHj7Ai6biGQNt29aMJibAe/LKXxYLm6Ca58NQOPpQE1GijP4QUhBLjrmYHg/DrSm0AFpbyW0BrIaOE9q/HTBecywpSiWrjFgqhoMfGCkaE7DFvnMAkBHlyXa1D+NiMc6cWl4WXs9AM0+qe13hjpm7Y8FwXoo2GqyaijCmBg2J8Jb45MWgwuwqDctVvlW6Mlpr7Reaw8W1ZkbvZ/PRfwXvU2TGMZMsU1GCn+7H5T4VVA1EVIc4X8BuYbtlffZQV3BTzu4El8FLc1nHqQHavWxuu1tdluTpdUtw5vH2580jCAnM5FIoBG/54cPXDSYBdWTgpxoRbsS1WnrlkvDOPvTjKRGCN7NR2M86UevP/e9PwRnCj1QV8eInUPQO+oJofO1J/0pTr4E9hZMKCWdrfJEGF1ZH4+Yul82f1w== catalinbostan@cataMPB.prosys.ro" ];
   environment.interactiveShellInit = ''
